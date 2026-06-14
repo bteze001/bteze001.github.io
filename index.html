@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beza Tezera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <div class="logo-mark">BT</div>
+                Beza Tezera
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="images/Tezera_Beza_Resume.pdf" class="btn-resume">Resume</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#software" class="mobile-nav-link">Software</a>
+        <a href="#data" class="mobile-nav-link">Data</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <section id="hero">
+        <div class="hero-noise"></div>
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <p class="hero-greeting font-mono">› hello, world.</p>
+                    <h1 class="hero-name font-display">
+                        Beza <br> Tezera
+                    </h1>
+
+                    <div class="hero-title">
+                        <span class="title-se">Software Engineer</span>
+                        <span class="title-sep">.</span>
+                        <span class="title-data">Data Scientist</span>
+                    </div>
+
+                    <p class="hero-bio"> Computer Science graduate who enjoys transforming complex data into compelling
+                        stories that drive business decisions and building scalable softwares that solve real world
+                        problems.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#software" class="btn-primary">
+                            View My Work
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M12 5v14M5 12l7 7 7-7" />
+                            </svg>
+                        </a>
+                        <a href="images/Tezera_Beza_Resume.pdf" class="btn-ghost">Download Resume
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="card-bar">
+                        <div class="card-dot"></div>
+                        <div class="card-dot"></div>
+                        <div class="card-dot"></div>
+                        <span>portfolio.ts</span>
+                    </div>
+                    <div class="code-block font-mono">
+                        <div><span class="c-brace">const</span> <span class="c-key">portfolio</span> <span
+                                class="c-brace">= {</span></div>
+                        <div>&nbsp;&nbsp;<span class="c-key">name</span><span class="c-brace">:</span> <span
+                                class="c-str">"Beza Tezera"</span><span class="c-brace">,</span></div>
+                        <div>&nbsp;&nbsp;<span class="c-key">upcoming role</span><span class="c-brace">:</span> <span
+                                class="c-str">"ESG & Sustainability analyst"</span><span class="c-brace">,</span></div>
+                        <div>&nbsp;&nbsp;<span class="c-key">focus</span><span class="c-brace">: [</span></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Software Engineering"</span><span
+                                class="c-brace">,</span></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"Data Science"</span></div>
+                        <div>&nbsp;&nbsp;<span class="c-brace">],</span></div>
+                        <div>&nbsp;&nbsp;<span class="c-key">available</span><span class="c-brace">:</span> <span
+                                class="c-bool">true</span></div>
+                        <div><span class="c-brace">}</span></div>
+                    </div>
+                    <div class="status-row">
+                        <div class="status-dot"></div>
+                        <span class="status-text font-mono">open to opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>scroll</span>
+            <svg class="scroll-arrow" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"
+                viewBox="0 0 24 24">
+                <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">
+                            <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.2"
+                                viewBox="0 0 24 24">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                            </svg>
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <p class="photo-caption">UC-Riverside <br>B.S. Computer Science, 2025</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="section-pill reveal">◈ About Me</div>
+                    <h2 class="reveal reveal-delay-1">Nice to meet you.</h2>
+                    <div class="about-bio reveal reveal-delay-2">
+                        <p>
+                            I'm a CS grad who genuinely loves working with data finding patterns, drawing out
+                            insights, and turning numbers into something that actually means something. I also just like
+                            building things, whether that's a clean data pipeline or a full product from scratch
+                        </p>
+                        <p>
+                            Outside of tech I'm usually drawing, painting, or working on some kind of arts and crafts
+                            project. I like making things with my hands as much as I like making things with code.
+                        </p>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat-card reveal reveal-delay-1">
+                            <div class="stat-num">10+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-2">
+                            <div class="stat-num">5+</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                        <div class="stat-card reveal reveal-delay-2">
+                            <div class="stat-num">3</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  SOFTWARE                                  -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <section id="software">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-pill">◈ Software Engineering</div>
+                <h2 class="section-title">What I Build</h2>
+                <div class="section-rule rule-dark"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="project-thumb">
+                        <img src="images/knitSchool.png" alt="KnitSchool Screenshoot" />
+                        <!-- <span class="thumb-label">[ Project Preview / Screenshot ]</span> -->
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">KnitSchool</div>
+                        <p class="project-desc">Learning platform for knitting and crochet with structured courses, a
+                            stitch library, pattern browser, a community hub for makers</p>
+                        <div class="project-metric">Deployed and live on Netlify</div>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Taliwand CSS</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Framer Motion</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bteze001/KnitSchool" class="project-link">
+                                GitHub
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="https://knitschool.netlify.app/" class="project-link">
+                                Demo
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="project-thumb">
+                        <img src="images/jobChecker.png" alt="Job Legitimacy Checker" />
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-name">Job Legitimacy Checker</div>
+                        <p class="project-desc">AI-powered tool that analyzes job postings and scores
+                            their legitimacy from 1–10, helping job seekers identify scams before
+                            applying. Flags red flags and provides a detailed breakdown of suspicious
+                            signals.
+                        </p>
+                        <div class="project-metric">Protects job seekers from fraudulent postings</div>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Claude API</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/bteze001/job_checker/tree/main/job-checker"
+                                class="project-link">
+                                GitHub
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="https://your-deployed-url.com" class="project-link">
+                                Live Demo
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-thumb">
+                        <video id="video-collegecompass" src="images/CollegeCompass.mov" autoplay muted playsinline
+                            preload="metadata">
+                        </video>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">CollegeCompass</div>
+                        <p class="project-desc">Web-based platform designed to help college students discover, rate, and
+                            save local food spots, housing options and campus activities</p>
+                        <div class="project-metric">Integrated Foursquare API with real-time search</div>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Foursquare API</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bteze001/College-Compass" class="project-link">
+                                GitHub
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="images/CollegeCompass.mov" class="project-link">
+                                Demo
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-thumb">
+                        <video id="video-projecthive" src="images/ProjectHive.mov" autoplay muted playsinline
+                            preload="metadata">
+                        </video>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-name">ProjectHive</div>
+                        <p class="project-desc">An easy to use project management platform that addresses the challenges
+                            of existing tools which are often too complex, too simple or too expensive.</p>
+                        <div class="project-metric">Full-stack app with C++ backend and REST API</div>
+                        <div class="tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">CROW Framework</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bteze001/ProjectHive" class="project-link">
+                                GitHub
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="images/ProjectHive.mov" class="project-link">
+                                Demo
+                                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                                    viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all reveal">
+                <a href="https://github.com" target="_blank" rel="noopener">→ View all projects on GitHub </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  DATA                                      -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <section id="data">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-pill">◈ Data Analytics &amp; Science</div>
+                <h2 class="section-title">What I Analyze</h2>
+                <div class="section-rule rule-light"></div>
+            </div>
+
+            <div class="case-study reveal">
+                <div class="case-chart">
+                    <div class="chart-bar" style="width:16px;height:38%"></div>
+                    <div class="chart-bar" style="width:16px;height:54%"></div>
+                    <div class="chart-bar" style="width:16px;height:44%"></div>
+                    <div class="chart-bar" style="width:16px;height:72%"></div>
+                    <div class="chart-bar" style="width:16px;height:60%"></div>
+                    <div class="chart-bar" style="width:16px;height:86%"></div>
+                    <div class="chart-bar" style="width:16px;height:68%"></div>
+                    <div class="chart-bar" style="width:16px;height:92%"></div>
+                </div>
+
+                <div class="case-content">
+                    <div class="case-label">Case Study 1</div>
+                    <div class="case-title">Amazon Product & Category Performance Analysis</div>
+                    <p class="case-desc">Comprehensive analysis of 1,351 Amazon products across 9 categories using SQL
+                        data extraction and Python data cleaning. Identified top-performing categories, analyzed rating
+                        distributions, and discovered hidden gem products with significant revenue potential. Applied
+                        advanced SQL queries for data aggregation and analysis.</p>
+                    <div class="pull-quote">Identified hidden gem products representing a 201.7% untapped revenue
+                        opportunity across underperforming categories.</div>
+                    <div class="case-tools">
+                        <span class="tag tag-data">SQL</span>
+                        <span class="tag tag-data">Python</span>
+                        <span class="tag tag-data">Data Cleaning</span>
+                        <span class="tag tag-data">Data Analysis</span>
+                    </div>
+                    <a href="https://github.com/bteze001/Amazon_sales_analytics/blob/main/project1/results/key_findings.md"
+                        class="case-study-link">
+                        View full analysis
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="case-study reveal">
+                <div class="case-chart">
+                    <div class="chart-slideshow" data-folder="images/project2" data-images="6"></div>
+                </div>
+
+                <div class="case-content">
+                    <div class="case-label">Case Study 2</div>
+                    <div class="case-title">Amazon Pricing & Discount Strategy Analysis</div>
+                    <p class="case-desc">Analyzed the impact of pricing and discount strategies on revenue
+                        and customer satisfaction across 1,351 Amazon products. Identified optimal
+                        pricing tiers and discount ranges through statistical analysis — validated
+                        with ANOVA (F=18.45, p&lt;0.001) — and built an interactive Tableau dashboard
+                        to visualize findings across 9 product categories.</p>
+                    <div class="pull-quote">7% of products drive 46% of total revenue, the premium tier is carrying the
+                        entire catalog.</div>
+                    <div class="case-tools">
+                        <span class="tag tag-data">MySQL</span>
+                        <span class="tag tag-data">Python</span>
+                        <span class="tag tag-data">Tableau</span>
+                        <span class="tag tag-data">Correlation Analysis</span>
+                        <span class="tag tag-data">Statistical Testing</span>
+                    </div>
+                    <a href="https://github.com/bteze001/Amazon_sales_analytics/blob/main/project2/results/insights.md"
+                        class="case-study-link">
+                        View full analysis
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="case-study reveal">
+                <div class="case-chart">
+                    <div class="chart-slideshow" data-folder="images/project3" data-images="4"></div>
+                </div>
+
+                <div class="case-content">
+                    <div class="case-label">Case Study 3</div>
+                    <div class="case-title">Amazon Customer Review & Sentiment Analysis</div>
+                    <p class="case-desc">Applied NLP techniques to analyze sentiment patterns across 1,000+
+                        Amazon reviews using VADER sentiment analysis, LDA topic modeling, and aspect-based
+                        extraction. Achieved 77% accuracy in sentiment prediction against star ratings, with
+                        0.98 recall for positive sentiment, revealing that Design is the top satisfaction
+                        driver (+0.94) while shorter reviews skew more negative than longer ones.</p>
+                    <div class="pull-quote">Design emerged as the top satisfaction driver (+0.94), while Quality lagged
+                        behind, a gap most sellers overlook.</div>
+                    <div class="case-tools">
+                        <span class="tag tag-data">NLTK</span>
+                        <span class="tag tag-data">Python</span>
+                        <span class="tag tag-data">Vader</span>
+                        <span class="tag tag-data">LDA</span>
+                        <span class="tag tag-data">Data visualization</span>
+                    </div>
+                    <a href="https://github.com/bteze001/Amazon_sales_analytics/blob/main/project3/results/findings/insights.md"
+                        class="case-study-link">
+                        View full analysis
+                        <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  SKILLS                                    -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div style="text-align: center" class="reveal">
+                <div class="section-pill" style="display: inline-flex"> ◈ Skills &amp; Technologies</div>
+                <h2 class="section-title" style="margin-top: 8px">My Toolbox</h2>
+                <div class="section-rule rule-dark" style="margin: 14px auto 48px"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-panel reveal reveal-delay-1">
+                    <div class="skills-panel-title">
+                        <div class="panel-dot"></div>
+                        Software Engineering
+                    </div>
+                    <div class="skills-divider"></div>
+                    <div class="skill-group">
+                        <div class="skill-group-label">Languages</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Frameworks</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Next.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Infrastructure</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-panel reveal reveal-delay-2">
+                    <div class="skills-panel-title">
+                        <div class="panel-dot panel-dot-light"></div>
+                        Data &amp; Analytics
+                    </div>
+                    <div class="skills-divider"></div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Languages &amp; Query</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Spark</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Libraries &amp; Frameworks</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Hugging Face</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Visualization &amp; BI</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Plotly</span>
+                            <span class="skill-tag">ggplot2</span>
+                            <span class="skill-tag">Streamlit</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <div class="skill-group-label">Concepts</div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">A/B Testing</span>
+                            <span class="skill-tag">Statistics</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!--  EXPERIENCE                                -->
+    <!-- ══════════════════════════════════════════ -->
+    <section id="experience">
+        <div class="container" style="max-width:860px">
+            <div class="reveal">
+                <div class="section-pill">◈ Experience</div>
+                <h2 class="section-title">Where I've worked</h2>
+                <div class="section-rule rule-dark"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div class="timeline-meta font-mono">July 2026</div>
+                        <div class="timeline-role">ESG and Sustainability Analyst Intern</div>
+                        <div class="timeline-org"> Remote · San Francisco, CA </div>
+                    </div>
+
+                    <ul class="timeline-bullets">
+                        <!-- <li>point1</li> -->
+                    </ul>
+                    <div class="tags">
+                        <!-- <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">PathFX</span> -->
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div class="timeline-meta font-mono">April. 2026 - Present</div>
+                        <div class="timeline-role">Coding Coach</div>
+                        <div class="timeline-org">theCoderSchool · Los Angeles, CA </div>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Deliver one-on-one and small-group coding sessions for k-12 students across Scratch, Python,
+                            HTML, CSS, and JavaScript, adapting instruction to each student's pace and learning style.
+                        </li>
+                        <li>Guide students through project-based learning by asking leading
+                            questions rather than giving direct answers to build independent problem-solving skills.
+                        </li>
+                        <li>Maintain curriculum continuity across multiple student tracks, substituting for other
+                            coaches and picking up projects mid-stream without disrupting student progress.</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scratch</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div class="timeline-meta font-mono">Nov. 2025 - Mar. 2026</div>
+                        <div class="timeline-role">Data Analyst Intern</div>
+                        <div class="timeline-org">EcoServant · Remote</div>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Querying and managing enviromental datasets using SQL, including data validation and
+                            relational filtering.</li>
+                        <li>Utilizing JavaScript and PHP to support web-based dashboards and contribute to the
+                            development of EcoServants' proprietary Community Site Report (CSR) system.</li>
+                        <li>Supporting field data mapping by applying geospatial logic and assisting with the display of
+                            location-based metrics.</li>
+                        <li>Design and implement SQL database schema enhancements, including multiple tables with
+                            foreign key constraints, to support a distributed community node architecture.</li>
+                        <li>Evaluate Google Ads campaign performance, including CTR, CPC, and conversion rates, and
+                            recommend optimizations to enhance ad efficiency and reduce cost-per-click.</li>
+                        <li>Analyze website traffic and conversion KPIs using Google Analytics to identify friction
+                            points and improve user engagement.</li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag tag-data">Python</span>
+                        <span class="tag tag-data">SQL</span>
+                        <span class="tag tag-data">Google Analytics</span>
+                        <span class="tag tag-data">Google Ads</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div class="timeline-meta font-mono">Jun. 2024 - Aug. 2024</div>
+                        <div class="timeline-role">Research Assistant Intern</div>
+                        <div class="timeline-org">UCLA · Los Angeles, CA </div>
+                    </div>
+                    <ul class="timeline-bullets">
+                        <li>Cleaned and prepared large biomedical datasets using Python libraries, applying machine
+                            learning techniques to extract meaningful insights.</li>
+                        <li>Developed data pipelines to streamline data processing and analysis for research
+                            publications.</li>
+                        <li>Created interactive dashboards and visualizations to communicate findings effectively.</li>
+                        <li>Documented all methodologies, results, and summaries to maintain transparency in research
+                            workflows.</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Excel</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- CONTACT                                    -->
+    <!-- ══════════════════════════════════════════ -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="reveal">
+                    <div class="section-pill" style="display:inline-flex">◈ Contact</div>
+                    <h2 class="section-title" style="margin-top: 8px">Let's connect.</h2>
+                    <p class="section-subtitle">
+                        I'm actively looking for internship and full-time opportunities.
+                        Whether you have a role, a project idea, or just want to talk
+                        tech, my inbox is open.
+                    </p>
+                    <a href="mailto:tezerabeza1@gmail.com" class="btn-primary" style="display: inline-flex">Send me an
+                        email
+                        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,12 2,6" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="social-links reveal reveal-delay-1">
+                    <a href="https://github.com/bteze001" target="_blank" rel="noopener" class="social-link">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                        </svg>
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/beza-21bt03/" target="_blank" rel="noopener"
+                        class="social-link">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+
+                    <a href="images/Tezera_Beza_Resume.pdf" class="social-link">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                        Resume PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2025 Beza Tezera</span>
+        <a href="#hero">Back to top ↑</a>
+    </footer>
+</body>
+
+</html>
